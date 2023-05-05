@@ -36,11 +36,6 @@ function loadHerderTitle(arrayData) {
   }
 }
 
-//Download Button Function
-function dowenloadCV() {
-  window.open("Hassan-ali-hassan-CV.pdf");
-}
-
 //#endregion Header
 
 //#region Resume
