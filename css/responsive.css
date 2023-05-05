@@ -1,0 +1,211 @@
+@media only screen and (min-width: 600px)  {
+
+    /* #region Header */
+    .header .col h1 {
+        font-size: 3rem;
+    }
+
+    .header .col h1 span {
+        display: inline;
+    }
+
+    .header .col div {
+        flex-direction: row;
+    }
+
+    .header .col div span {
+        border-top: 0;
+        border-bottom: 0;
+        border-right: 1px solid var(--main-color);
+        border-left: 1px solid var(--main-color);
+    }
+
+    .header .col .cv-bownload {
+        margin: 2rem;
+    }
+    .social{
+        margin-top: 0rem;
+    
+    }
+
+    /* #endregion Header */
+    
+.services-cards.d-grid{
+    grid-template-columns: repeat(auto-fill,1fr);
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services-cards .card:hover{
+    box-shadow: 2px 2px 10px var(--black-color),
+                -2px -2px 10px var(--black-color);
+}
+
+}
+
+@media only screen and (min-width: 751px) {
+     /* #region Header */
+     .header .col {
+       height: 80vh;
+
+    }
+     .header .col h1 {
+        font-size:5rem;
+
+    }
+    .header .col .cv-bownload {
+        margin-top: 4rem;
+        transition: all 0.5s ease;
+    }
+    
+    .header .col .cv-bownload:hover {
+        transform: scale(1.1);
+    }
+    .social{
+        margin-top: 0rem;
+    
+    }
+    .social ul{
+       gap: 2rem;
+    }
+    
+    .social ul li a i{
+        color: var(--light-gray);
+        transition: all 0.5s ease;
+    }
+    .social ul li a i:hover{
+        color: var(--main-color);
+        transform: scale(1.5);
+    }
+
+
+
+    /* #endregion Header */
+
+
+  
+/* #region nav */
+nav{
+    left: 2rem;
+    transform: translatey(-50%);
+    background-color: rgba(0, 172, 181, 0.671);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+nav ul li a i {
+   transition:all 0.5s ease;
+ }
+
+nav ul li:hover a i {
+   color: var(--light-gray);
+   transform: scale(1.5);
+ }
+
+ nav ul li img{
+    width: 40px;
+}
+/* #endregion nav */
+
+
+/* #region Resume Section */
+.header-number span{
+  font-size: 2rem;
+}
+.header-number span::before{
+    width: 2.5rem;
+    height: 0.4rem;
+}
+
+.resume-action.g-1{
+    grid-template-columns: 2fr 1fr;
+}
+
+.resume-action .experance-container{
+margin-top: 0 !important;
+}
+.custom-card .content{
+    border-left: 5px solid var(--black-color);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 2rem;
+    margin-left: 0.5rem;
+}
+.custom-card:nth-child(even) .content{
+   background-color: rgba(181, 181, 181,0.2);
+   
+}
+.custom-card .content p{
+    max-width: 40rem;
+}
+
+.my-skills .skills-header span::after{
+        display: block;
+        content: " "; 
+        width: 3rem;
+        height: 0.2rem;
+        background-color: var(--main-color);
+        border-radius: 10px;
+        margin: 0.5rem 0;
+        }
+
+.my-skills .progress-div p{
+    color: var(--main-color);
+}
+.my-skills .progress-div .progress-bar{
+    height: 0.5rem;
+    background-color: var(--light-gray);
+    border-radius: 10px;
+    width: 100%;
+
+}
+.my-skills .progress-div .progress-bar .bar{
+   
+    height: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--main-color);
+
+}
+.w-100{width: 100%;}
+.w-90{width: 90%;}
+.w-80{width: 80%;}
+.w-70{width: 70%;}
+.w-60{width: 60%;}
+.w-50{width: 50%;}
+
+/* #endregion Resume Section*/
+
+
+/* #region Services Section*/
+
+.services-cards.d-grid{
+
+    grid-template-columns: repeat(auto-fill, 15rem);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-cards .card{
+  min-height: 20rem;
+  opacity: 0.7; 
+  transform: skewY(-10deg);
+
+}
+.services-cards .card .card-body{
+line-height: 2.5;
+}
+
+
+.services-cards .card:hover{
+    box-shadow: 2px 2px 10px var(--black-color),
+                -2px -2px 10px var(--black-color);
+    transform: skewY(0) scale(1.1);
+    opacity: 1;
+}
+
+
+/* #endregion Services Section*/
+
+}
